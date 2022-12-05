@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<HTML>
+<HEAD>
+<META CHARSET="UTF-8">
+<TITLE>JavaScriptを用いて外部から取得したデータを表示 その2</TITLE>
+<SCRIPT SRC="foods.js"></SCRIPT>
+</HEAD>
+<BODY>
+2242057 氏名杉本彩里<BR>
+<HR>
+<SCRIPT>
+document.write('<TABLE BORDER="1" ID="table">');
+document.write('<TR><TH>番号</TH><TH>食べ物名</TH><TH>お勧めポイント</TH><TH>お勧め度</TH></TR>');
+var i;
+for(i = 1; i < food.length; ++i){
+ document.write('<TR><TD>' + i + '</TD><TD>' + food[i] +
+ '</TD><TD>' + text[i] + '</TD><TD>' + reco[i] + '</TD></TR>');
+}
+document.write('</TABLE>');
+</SCRIPT>
+</BODY>
+</HTML>
