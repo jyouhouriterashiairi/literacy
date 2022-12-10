@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<hhml lang="ja">
+<html lang="ja">
     <head>
     <meta charset="UTF-8">
         <title>最終課題(住所検索)</title>
