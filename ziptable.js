@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
         <title>最終課題(住所検索)</title>
         <script src="ziptable.js"></script>
+
         <script>
            <function search_partial(){
                 var i;
