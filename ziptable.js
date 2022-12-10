@@ -9,27 +9,27 @@
            <function search_partial(){
                 var i;
                 var input = prompt('都道府県を入力してください.', '千葉県');//入力された文字列
-                var result ='見つかりません';//検索結果を入れる変数'
+                var result ='見つかりません'; // 検索結果を入れる変数'
                 for(i =0; i < zipdb.length; ++i){
-                    if ( zipdb[i]['address'].match(input)){//入力がi番のデータと部分一致かどうか判定
+                    if ( zipdb[i]['address'].match(input)){ // 入力がi番のデータと部分一致かどうか判定
                         result = zipdb[i]['zip']+zipdb[i]['address'];
-                        break;//最も内側の for ループから抜け出す
+                        break; // 最も内側の for ループから抜け出す
                     }
                 }
-                document.getElementById('out').innerHTML = result;//検索結果を out の ID を持つ要素に書く
+                document.getElementById('out').innerHTML = result; // 検索結果を out の ID を持つ要素に書く
             }
             function search_exact(){
                 var i;
                 var input('郵便番号を入力してください.', '2730864');//入力された文字列
-                var result = 'Not found.';//検索結果を入れる変数
-                var n = zipdb.length;//検索対象の配列の大きさ
+                var result = 'Not found.'; // 検索結果を入れる変数
+                var n = zipdb.length; // 検索対象の配列の大きさ
                 for(i = 0; i < n; ++i){
-                    if(  zipdb[i]['zip'] == input ){ //入力がi番のデータと完全一致かどうか判定
+                    if(  zipdb[i]['zip'] == input ){ // 入力がi番のデータと完全一致かどうか判定
                          result = zipdb[i]['zip']+zipdb[i]['address'];
-                         break; //最も内側の　for ループから抜け出す
+                         break; // 最も内側の　for ループから抜け出す
                     }
                 }
-                document.getElementById('out').innerHTML = result; //検索結果を out の IDを持つ要素に書く
+                document.getElementById('out').innerHTML = result; // 検索結果を out の IDを持つ要素に書く
             }
         </script>
     </head>
